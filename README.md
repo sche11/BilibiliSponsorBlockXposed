@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <a href="https://www.bsbsb.top"><img src="public/icons/LogoSponsorBlocker256px.png" alt="Logo"></img></a>
+  <a href="https://www.bsbsb.top"><img src="https://github.com/hanydd/BilibiliSponsorBlock/blob/master/public/icons/IconSponsorBlocker256px.png" alt="Logo"></img></a>
 
   <br/>
   <sub>Logo by <a href="https://github.com/munadikieh">@munadikieh</a>. Modified by Yaodong</sub>
@@ -29,6 +29,15 @@
 除了广告之外，插件还支持跳过其他类别的片段，例如开场结尾的动画、一键三连提示，或者直接空降到视频封面的位置。插件中所有的标注片段都来自网友标注，您也可以提交自己的片段来为空降指挥部添砖加瓦。
 
 想知道大佬们提交了多少片段？在[排行榜](https://www.bsbsb.top/stats/)看看吧。
+
+
+# 预览截图
+
+| 功能截图1 | 功能截图2 |
+| :---: | :---: |
+| ![截图1](https://github.com/sche11/BilibiliSponsorBlockXposed/blob/main/img/1.jpg) | ![截图2](https://github.com/sche11/BilibiliSponsorBlockXposed/blob/main/img/2.jpg) |
+| 功能截图3 | 功能截图4 |
+| <img src="https://github.com/sche11/BilibiliSponsorBlockXposed/blob/main/img/3.jpg" width="70%" alt="截图3"> | <img src="https://github.com/sche11/BilibiliSponsorBlockXposed/blob/main/img/4.jpg" width="70%" alt="截图4"> |
 
 
 # 功能
