@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 跳过模式选项 -->
+    <string-array name="skip_modes">
+        <item>总是跳过</item>
+        <item>仅跳过一次</item>
+        <item>手动跳过</item>
+        <item>不跳过</item>
+    </string-array>
+    
+    <string-array name="skip_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+    <!-- 类别名称 -->
+    <string-array name="category_names">
+        <item>赞助商广告</item>
+        <item>自我推广</item>
+        <item>片头</item>
+        <item>片尾</item>
+        <item>互动提醒</item>
+        <item>预览/回顾</item>
+        <item>填充内容</item>
+        <item>非音乐部分</item>
+    </string-array>
+    
+    <string-array name="category_values">
+        <item>sponsor</item>
+        <item>selfpromo</item>
+        <item>intro</item>
+        <item>outro</item>
+        <item>interaction</item>
+        <item>preview</item>
+        <item>filler</item>
+        <item>music_offtopic</item>
+    </string-array>
+</resources>

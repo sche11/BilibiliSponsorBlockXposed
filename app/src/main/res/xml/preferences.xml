@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 模块开关 -->
+    <CheckBoxPreference
+        android:key="module_enabled"
+        android:title="启用空降助手"
+        android:summary="开启/关闭 SponsorBlock 功能"
+        android:defaultValue="true" />
+
+    <!-- 提示设置 -->
+    <CheckBoxPreference
+        android:key="show_toast"
+        android:title="显示跳过提示"
+        android:summary="跳过片段时显示 Toast 提示"
+        android:defaultValue="true" />
+
+    <!-- 日志查看 -->
+    <Preference
+        android:key="view_logs"
+        android:title="查看日志"
+        android:summary="点击查看模块运行日志" />
+
+    <!-- 提交片段 -->
+    <Preference
+        android:key="submit_segment"
+        android:title="提交空降片段"
+        android:summary="标记并提交新的空降片段，帮助其他用户" />
+
+    <!-- 颜色设置 -->
+    <Preference
+        android:key="color_settings"
+        android:title="片段颜色设置"
+        android:summary="自定义进度条上不同片段类别的颜色" />
+
+    <!-- API 服务器设置 -->
+    <EditTextPreference
+        android:key="api_server"
+        android:title="API 服务器"
+        android:summary="空降助手 API 服务器地址"
+        android:defaultValue="https://bsbsb.top/api"
+        android:dialogTitle="输入 API 服务器地址"
+        android:dialogMessage="默认: https://bsbsb.top/api (BiliPai 推荐)&#xA;备用: https://api.bilibili.sb (官方)" />
+
+    <!-- 类别设置分类 -->
+    <PreferenceCategory android:title="跳过类别设置">
+
+        <CheckBoxPreference
+            android:key="skip_sponsor"
+            android:title="赞助商广告"
+            android:summary="跳过赞助商广告片段"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="skip_selfpromo"
+            android:title="自我推广"
+            android:summary="跳过 UP 主的自我推广"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="skip_intro"
+            android:title="片头"
+            android:summary="跳过片头动画/介绍"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="skip_outro"
+            android:title="片尾"
+            android:summary="跳过片尾/结束画面"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="skip_interaction"
+            android:title="互动提醒"
+            android:summary="跳过点赞、订阅等互动提醒"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="skip_preview"
+            android:title="预览/回顾"
+            android:summary="跳过内容预览或回顾"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="skip_filler"
+            android:title="填充内容"
+            android:summary="跳过与视频主题无关的填充内容"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="skip_music_offtopic"
+            android:title="非音乐部分"
+            android:summary="跳过音乐视频中的非音乐片段"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- 跳过模式设置 -->
+    <PreferenceCategory android:title="跳过模式设置">
+
+        <ListPreference
+            android:key="skip_mode_sponsor"
+            android:title="赞助商广告 - 跳过模式"
+            android:summary="选择如何跳过此类片段"
+            android:entries="@array/skip_modes"
+            android:entryValues="@array/skip_mode_values"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="skip_mode_selfpromo"
+            android:title="自我推广 - 跳过模式"
+            android:summary="选择如何跳过此类片段"
+            android:entries="@array/skip_modes"
+            android:entryValues="@array/skip_mode_values"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="skip_mode_intro"
+            android:title="片头 - 跳过模式"
+            android:summary="选择如何跳过此类片段"
+            android:entries="@array/skip_modes"
+            android:entryValues="@array/skip_mode_values"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="skip_mode_outro"
+            android:title="片尾 - 跳过模式"
+            android:summary="选择如何跳过此类片段"
+            android:entries="@array/skip_modes"
+            android:entryValues="@array/skip_mode_values"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="skip_mode_interaction"
+            android:title="互动提醒 - 跳过模式"
+            android:summary="选择如何跳过此类片段"
+            android:entries="@array/skip_modes"
+            android:entryValues="@array/skip_mode_values"
+            android:defaultValue="3" />
+
+        <ListPreference
+            android:key="skip_mode_preview"
+            android:title="预览/回顾 - 跳过模式"
+            android:summary="选择如何跳过此类片段"
+            android:entries="@array/skip_modes"
+            android:entryValues="@array/skip_mode_values"
+            android:defaultValue="3" />
+
+        <ListPreference
+            android:key="skip_mode_filler"
+            android:title="填充内容 - 跳过模式"
+            android:summary="选择如何跳过此类片段"
+            android:entries="@array/skip_modes"
+            android:entryValues="@array/skip_mode_values"
+            android:defaultValue="3" />
+
+        <ListPreference
+            android:key="skip_mode_music_offtopic"
+            android:title="非音乐部分 - 跳过模式"
+            android:summary="选择如何跳过此类片段"
+            android:entries="@array/skip_modes"
+            android:entryValues="@array/skip_mode_values"
+            android:defaultValue="3" />
+
+    </PreferenceCategory>
+
+    <!-- 调试设置 -->
+    <PreferenceCategory android:title="调试设置">
+        <CheckBoxPreference
+            android:key="test_mode"
+            android:title="测试模式"
+            android:summary="启用测试片段显示，用于验证进度条颜色标记功能"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <!-- 关于 -->
+    <PreferenceCategory android:title="关于">
+        <Preference
+            android:key="about"
+            android:title="空降助手 (Bilibili SponsorBlock)"
+            android:summary="版本 1.0 - 基于 BiliPai 和 BilibiliSponsorBlock 官方实现&#xA;API: https://bsbsb.top/api" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

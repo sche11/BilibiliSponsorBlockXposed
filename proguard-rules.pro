@@ -1,0 +1,5 @@
+-keep class de.robv.android.xposed.** { *; }
+-keep class com.example.bilibilisponsorblock.** { *; }
+-dontwarn org.json.**
+-keep class android.widget.Toast { *; }
+-keep class android.app.ActivityThread { *; }

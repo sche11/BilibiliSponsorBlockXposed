@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:label="Bilibili SponsorBlock"
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:roundIcon="@drawable/ic_launcher_foreground">
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="跳过Bilibili视频中的赞助商广告和片头片尾" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+        <meta-data
+            android:name="xposedscope"
+            android:value="tv.danmaku.bili,com.bilibili.app.in" />
+
+        <activity
+            android:name=".MaterialSettingsActivity"
+            android:label="空降助手"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="设置(旧版)"
+            android:exported="false" />
+
+        <activity
+            android:name=".LogActivity"
+            android:label="日志查看"
+            android:exported="false" />
+
+        <activity
+            android:name=".SubmitSegmentActivity"
+            android:label="提交空降片段"
+            android:exported="true" />
+
+        <activity
+            android:name=".ColorSettingsActivity"
+            android:label="片段颜色设置"
+            android:exported="false" />
+
+    </application>
+</manifest>
